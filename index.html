@@ -943,35 +943,44 @@
 
                 <!-- Contact Form -->
 
-                <form class="contact-form">
+                <form
+    class="contact-form"
+    action="https://formsubmit.co/auwalharuna738@gmail.com"
+    method="POST">
 
-                    <input
-                        type="text"
-                        placeholder="Full Name"
-                        required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required>
 
-                    <input
-                        type="email"
-                        placeholder="Email Address"
-                        required>
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required>
 
-                    <input
-                        type="text"
-                        placeholder="Project Title">
+    <input
+        type="text"
+        name="project"
+        placeholder="Project Title">
 
-                    <textarea
-                        placeholder="Tell me about your project..."
-                        rows="7"
-                        required></textarea>
+    <textarea
+        name="message"
+        placeholder="Tell me about your project..."
+        rows="7"
+        required></textarea>
 
-                    <button type="submit" class="btn primary">
+    <button type="submit" class="btn primary">
+        Send Message
+    </button>
 
-                        Send Message
+    <!-- FormSubmit Settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Portfolio Inquiry">
+    <input type="hidden" name="_template" value="table">
 
-                    </button>
-
-                </form>
-
+</form>
             </div>
 
         </div>
